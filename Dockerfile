@@ -15,7 +15,7 @@ RUN ln -sf /dev/stderr /var/log/apache2/error.log
  
 VOLUME ["/var/www", "/var/log/apache2", "/etc/apache2"]
  
-COPY app/* /var/www/html
+COPY * /var/www/html
  
 EXPOSE 80
  
